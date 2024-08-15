@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <title>A caverna misteriosa</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="iniciando a jornada">
+            <p>Em um dia chuvoso, você está andando, quando aleatoriamente encontra uma caverna.</p>
+            <button class="btn-proximo" data-proximo="1">Entrar na caverna</button>
+            <button class="btn-proximo" data-proximo="2">Ignorar</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você entra na caverna e começa a andar por ela, mas sente uma sensação de perigo.</p>
+            <button class="btn-proximo" data-proximo="3">Continuar explorando</button>
+            <button class="btn-proximo" data-proximo="4">Desistir</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Você ignora a caverna e senta-se ao lado da entrada, até que começa a perceber um estranho som vindo de
+                dentro dela.</p>
+            <button class="btn-proximo" data-proximo="5">Investigar</button>
+            <button class="btn-proximo" data-proximo="6">Ignorar</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Você percebe um leve som vindo da caverna.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir em frente</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4.png" alt="você desistiu">
+            <p>Você desiste de explorar e volta para casa.</p>
+        </div>
+        <div class="passo" id="passo-5">
+            <p>Você olha em volta da caverna, mas não encontra nada. Sua única opção é entrar.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir em frente</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <p>O som começa a ficar irritante.</p>
+            <button class="btn-proximo" data-proximo="8">Ignorar</button>
+        </div>
+        <div class="passo" id="passo-7">
+            <p>Mais para dentro da caverna você encontra uma cachoeira.</p>
+            <button class="btn-proximo" data-proximo="9">Seguir pelas bordas da cachoeira</button>
+            <button class="btn-proximo" data-proximo="10">Olhar em volta</button>
+        </div>
+        <div class="passo" id="passo-8">
+            <p>Você não consegue mais aguentar o som.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir em frente</button>
+        </div>
+        <div class="passo" id="passo-9">
+            <p>Você começa a ver uma luz forte.</p>
+            <button class="btn-proximo" data-proximo="11">Ir em direção a luz</button>
+        </div>
+        <div class="passo" id="passo-10">
+            <p>Você encontra um caminho alternativo.</p>
+            <button class="btn-proximo" data-proximo="12">Seguir o caminho</button>
+        </div>
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11.png" alt="você chegou no final">
+            <p>Você chega na saída da caverna, e encontra uma cidade perdida.</p>
+        </div>
+        <div class="passo" id="passo-12">
+            <p>Você segue o caminho, até começar a ver um brilho. Parece que sua jornada está próxima do fim.</p>
+            <button class="btn-proximo" data-proximo="11">Ir em direção a luz</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
